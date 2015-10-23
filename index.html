@@ -240,7 +240,7 @@ an integer (or boolean), and must between -100 and 100 inclusive. The allowed cr
 }
 </code></pre>
 
-<p>Note the existance of the "<strong>classes</strong>" dictionary. This form is termed as the explicit form. The advantage of this form is that it is possible to define Module Data Attributes which are dictionaries, something which impossible in the other form of json.</p>
+<p>Note the existence of the "<strong>classes</strong>" dictionary. This form is termed as the explicit form. The advantage of this form is that it is possible to define Module Data Attributes which are dictionaries, something which impossible in the other form of json.</p>
 
 <hr>
 
@@ -272,15 +272,15 @@ an integer (or boolean), and must between -100 and 100 inclusive. The allowed cr
 <p><strong>All</strong> key, value pairs in the top level are created as module level attributes (see example of <code>__version__</code> above) with the following notes and exceptions:</p>
 
 <ul>
-<li>An optional key of <code>__doc__</code> is found then the value is used as the module documentation string instead of an automatically generated string (example as above <code>classes.__doc__</code> example). While it is normal that the value is a string if a different object is provided the documentation string will be set to the string representation of that object.</li>
-<li>If the configuration item AllDictionariesAsClasses is set to False, then an optional key of <code>__classes__</code> which has the value of a dictionary - this dictionary is interpreted as the definition of the classes in this module - see section 3. Any other dictionary under the Top Level JSON is treated as a Module Data Attribute.</li>
-<li>If the configuration item AllDictionariesAsClasses is set to True, then every dictionary under the Top Level is interpreted as the definition of the classes in this module, with the key name as the class name - see section 4.</li>
+<li>An optional key of <code>__doc__</code> is found then the value is used as the module documentation string instead of an automatically generated string. While it is normal that the value is a string if a different object is provided the documentation string will be set to the string representation of that object.</li>
+<li>If an optional key of <code>__classes__</code> exists then this dictionary is interpreted as the definition of the classes in this module - see section 3. Any in this case any other dictionary under the Top Level JSON is treated as a Module Data Attribute.</li>
+<li>If an optional key of <code>__classes__</code> does not exists then all dictionaries under the Top Level areas the definition of the classes in this module - see section 4. Any in this case it is not possible to define a Module Data Attribute with a dictionary value.</li>
 </ul>
 
 <h2>
 <a id="3-content-of-__classes__-dictionary" class="anchor" href="#3-content-of-__classes__-dictionary" aria-hidden="true"><span class="octicon octicon-link"></span></a>3 Content of <code>__classes__</code> dictionary</h2>
 
-<p>When the configuration item AllDictionariesAsClasses is set to False, within the <code>__classes__</code> dictionary in the json file, each key,value is a separate class to be created. The key is the class name, and the value must be a dictionary (called the class defining dictionary) - see section 4. An example of this form of JSON file is used above.</p>
+<p>When the <code>__classes__</code> dictionary exists in the json file, each key,value within that dictionary is a separate class to be created. The key is the class name, and the value must be a dictionary (called the class defining dictionary) - see section 4. An example of this form of JSON file is used above.</p>
 
 <h2>
 <a id="4-content-of-a-class-defining-dictionary" class="anchor" href="#4-content-of-a-class-defining-dictionary" aria-hidden="true"><span class="octicon octicon-link"></span></a>4 Content of a class defining dictionary</h2>
