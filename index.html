@@ -1,36 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="UTF-8">
     <title>Py-importjson by TonyFlury</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Py-importjson</h1>
-        <p class="header">Import json data into python as a module, complete with auto creation of classes, class and instance data attributes, __init__ methods and more.</p>
+    <section class="page-header">
+      <h1 class="project-name">Py-importjson</h1>
+      <h2 class="project-tagline">Import json data into python as a module, complete with auto creation of classes, class and instance data attributes, __init__ methods and more.</h2>
+      <a href="https://github.com/TonyFlury/py-importjson" class="btn">View on GitHub</a>
+      <a href="https://github.com/TonyFlury/py-importjson/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/TonyFlury/py-importjson/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/TonyFlury/py-importjson/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/TonyFlury/py-importjson/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/TonyFlury/py-importjson">View On GitHub</a></li>
-        </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/TonyFlury">TonyFlury</a></p>
-
-
-      </header>
-      <section>
-        <h1></h1>
+    <section class="main-content">
+      <h1></h1>
 
 <h1>
 <a id="importjson--import-json-data-into-a-python-application" class="anchor" href="#importjson--import-json-data-into-a-python-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>importjson : Import json data into a python application</h1>
@@ -40,15 +29,16 @@
 <p>It would be better in many cases to be able to combine the data and functionality in a single place, and with the importjson library you can do that. The library allows you to import a json file direct into your python application.
 The library uses the json data to construct a set of classes, complete with class attributes, and instance data attributes (implemented with set and get descriptors). These classes are presented as a fully formed python module - just as if you had written the code yourself.</p>
 
-<p>+--------------------------------------------------------------------------------+
-|                            <em>Bugs</em>                                              |
-+================================================================================+
-| Every care is taken to try to ensure that this code comes to you bug free.     |
-| If you do find an error - please report the problem on :                       |
-| <code>GitHub &lt;https://github.com/TonyFlury/py-importjson/issues/new&gt;</code>_              |
-| or                                                                             |
-| by email to : <code>Tony Flury &lt;mailto:anthony.flury?Subject=ImportJson%20Error&gt;</code>_  |
-+--------------------------------------------------------------------------------+</p>
+<pre><code>                        *Bugs*                                              
+</code></pre>
+
+<hr>
+
+<p>Every care is taken to try to ensure that this code comes to you bug free.<br>
+ If you do find an error - please report the problem on :<br>
+ <code>GitHub &lt;https://github.com/TonyFlury/py-importjson/issues/new&gt;</code>_<br>
+ or<br>
+ by email to : <code>Tony Flury &lt;mailto:anthony.flury?Subject=ImportJson%20Error&gt;</code>_  </p>
 
 <h2>
 <a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h2>
@@ -459,12 +449,15 @@ either return a value (which will be stored as the value of the attribute, or mu
 <li>Keys in <code>__constrains__</code> section should be case insensitive</li>
 <li>validity of <code>__constrains_</code> items should be performed at import time.</li>
 </ul>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/TonyFlury/py-importjson">Py-importjson</a> is maintained by <a href="https://github.com/TonyFlury">TonyFlury</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
+
+    </section>
+
+  
   </body>
 </html>
